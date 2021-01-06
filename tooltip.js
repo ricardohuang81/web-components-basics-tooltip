@@ -12,9 +12,29 @@ class Tooltip extends HTMLElement {
             position: absolute;
             z-index: 10;
           }
+
+          :host {
+            background: Azure;
+          }
+
+          .highlight {
+            background-color: LightPink;
+          }
+
+          ::slotted(.highlight) {
+            border-bottom: 2px dotted HotPink;
+          }
+
+          .icon {
+            background: Gold;
+            color: LightSkyBlue;
+            padding: 0.15rem 0.5rem;
+            text-align: center;
+            border-radius: 50%;
+          }
         </style>
         <slot>Some Default Value</slot>
-        <span> (?)</span>
+        <span class="icon">?</span>
     `;
   }
   connectedCallback() {

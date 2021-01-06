@@ -8,13 +8,24 @@
     div {
       border: 2px solid DodgerBlue;
     }
+
+    rh-tooltip {
+      border: 1px solid OrangeRed;
+      padding: 0.15rem;
+    }
+
+    .highlight {
+      /* background-color: MediumSpringGreen; */
+      /* border-bottom: 2px solid DodgerBlue; */
+    }
   </style>
   <script src="tooltip.js"></script>
   <script src="confirm-link.js"></script>
 </head>
 <body>
   <p>
-    <rh-tooltip text="Set of Standards">Web Components</rh-tooltip> are cool!
+    <rh-tooltip text="Set of Standards"><span class="highlight">Web Components</span></rh-tooltip> 
+    are cool!
   </p>
   <p>
     <rh-tooltip></rh-tooltip>
