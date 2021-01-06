@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Components</title>
+  <style>
+    div {
+      border: 2px solid DodgerBlue;
+    }
+  </style>
+  <script src="tooltip.js"></script>
+  <script src="confirm-link.js"></script>
+</head>
+<body>
+  <p>
+    <rh-tooltip text="Set of Standards">Web Components</rh-tooltip> are cool!
+  </p>
+  <p>
+    <rh-tooltip></rh-tooltip>
+    <div>This does not get the web component styles</div>
+    <a is="rh-confirm-link" href="https://google.com">Google</a>
+  </p>
+</body>
+</html>
